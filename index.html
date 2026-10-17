@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="id">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261016-04-d5e3a25","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Cairo":"YAFdtXpDzlQ,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Open Sans":"YAFdJt8dAY0,1","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","STIX Two Text":"YAHO2joycuk,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/05db820ba1544614.telemetry_sdk.js" integrity="sha512-a7JzkQDDcioSXpM61nxTfeRW7PcxWQy5+BrhyeTFmQFsXJ+Gncm0y50u7fTA7qOPegFnRgqCfa0mGUOK1yjDWQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Report Text Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#183b32;--muted:#60756a;--cream:#f5f2e9;--line:#d9ded1;--orange:#e48048}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif}
+    .app-wrapper{width:100%;min-height:100%;background:var(--cream)}
+    h1,h2,h3{font-family:Fraunces,serif;line-height:1.2}h1{font-size:clamp(1.9rem,3.5vw,2.8rem)}h2{font-size:clamp(1.5rem,2.8vw,2rem)}
+    .surface{background:#fffefa;border:1px solid var(--line);box-shadow:0 16px 45px #183b3210}
+    .primary,.secondary{border-radius:14px;padding:.8rem 1.2rem;font-weight:700;transition:background .2s}
+    .primary{background:#183b32;color:white}.primary:hover:not(:disabled){background:#275e4f}
+    .secondary{border:1px solid #aab9ab;background:#fffefa;color:#183b32}.secondary:hover:not(:disabled){background:#eef4ed}
+    button:disabled{opacity:.48;cursor:not-allowed}button,input,textarea,select{font:inherit}
+    button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+    input:not([type=radio]),textarea,select{border:1px solid #b7c6b8;border-radius:12px;padding:.75rem 1rem;background:white;width:100%}
+    .option{border:1px solid var(--line);border-radius:12px;padding:.75rem 1rem;background:white;text-align:left;width:100%;transition:background .2s,border-color .2s}
+    .option:hover:not(:disabled){border-color:#67927e;background:#f0f6ed}
+    .option.selected{border-color:var(--ink);background:#e4f1e9;box-shadow:inset 0 0 0 1px var(--ink)}
+    .option.incorrect{border-color:#ce805b;background:#fff0e5}
+    .bar{height:8px;background:#dfe7dd;border-radius:999px;overflow:hidden}.fill{height:100%;background:var(--orange);border-radius:999px;transition:width .35s}
+    [hidden]{display:none!important}.photo{object-fit:cover;width:100%;height:100%}
+    .screen{animation:appear .35s both}@keyframes appear{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+    .question{border:1px solid var(--line);border-radius:18px;background:white;padding:1.25rem}
+    .reading{line-height:1.75;white-space:pre-line}.tag{color:#ad5a35;font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700}
+    .guided-card.is-locked{opacity:.63}.guided-card.is-locked .option{cursor:not-allowed}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/570d53629f0b998d.data_sdk.js" type="text/javascript" integrity="sha512-JEN39+V+Nvv9ZZOVS8vNk1iA9ErZJHTdgOw9KzPuMiK7m0I+KPEr/wmTnCFIQVsDjCZgJWfGnFi1IQh2Io2qyA=="></script>
+  <script src="/_sdk/7825871aa95c503d.editing_sdk.js" type="text/javascript" integrity="sha512-2lFhP7fVLyI/xh1XVD1wGvcEUDBQxBW40AsWL6PQ5RZg0/hxM41hBHE/wQF1zqhE8vvzASF/osL1pnlucLWnaQ=="></script>
+  <script src="/_sdk/f195026a424c1f85.resizing_sdk.js" type="text/javascript" integrity="sha512-8On4Z+AXh1abEzZJ9Dbn9wOvFg+k1LsAaAzKGQ7LlfgXajZ9xEmZaZ1QVzv0AWhCZtCsEpWSOG9DgLri06TS7A=="></script>
+ </head>
+ <body data-template-id="__page-root">
+  <div class="app-wrapper">
+   <header class="w-full border-b border-[#d9ded1] bg-[#fffefa]">
+    <div class="max-w-6xl mx-auto px-5 py-4 flex flex-wrap items-center justify-between gap-3">
+     <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-[#183b32] text-white grid place-items-center text-xl" aria-hidden="true">
+       ✦
+      </div>
+      <div>
+       <p data-template-id="brand-name" class="canva-text font-bold"></p>
+       <p data-template-id="brand-subtitle" class="canva-text"></p>
+      </div>
+     </div>
+     <div class="flex items-center gap-3">
+      <span id="student-chip" class="text-sm font-bold"></span><button id="dashboard-open" data-template-id="dashboard-button" class="canva-button secondary" type="button"></button>
+     </div>
+    </div>
+   </header>
+   <main class="max-w-6xl mx-auto px-5 py-7 md:py-10">
+    <div id="learning-shell" hidden>
+     <div class="flex flex-wrap justify-between gap-3 mb-5">
+      <span id="position" class="text-sm font-bold uppercase tracking-widest"></span><span id="save-status" role="status" class="text-sm text-[#60756a]"></span>
+     </div>
+     <div class="grid md:grid-cols-3 gap-3 mb-7">
+      <div class="surface rounded-xl p-3">
+       <div class="flex justify-between mb-2">
+        <span data-template-id="material-label" class="canva-text"></span><span id="material-number">0%</span>
+       </div>
+       <div class="bar">
+        <div id="material-fill" class="fill"></div>
+       </div>
+      </div>
+      <div class="surface rounded-xl p-3">
+       <div class="flex justify-between mb-2">
+        <span data-template-id="activity-label" class="canva-text"></span><span id="activity-number">0%</span>
+       </div>
+       <div class="bar">
+        <div id="activity-fill" class="fill"></div>
+       </div>
+      </div>
+      <div class="surface rounded-xl p-3">
+       <div class="flex justify-between mb-2">
+        <span data-template-id="evaluation-label" class="canva-text"></span><span id="evaluation-number">0%</span>
+       </div>
+       <div class="bar">
+        <div id="evaluation-fill" class="fill"></div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <section id="login" class="screen grid md:grid-cols-2 gap-6">
+     <div class="surface rounded-[28px] p-7 md:p-12 flex flex-col justify-center"><span data-template-id="login-eyebrow" class="canva-tag tag mb-4"></span>
+      <h1 data-template-id="login-title" class="canva-text mb-4"></h1>
+      <p data-template-id="login-description" class="canva-text mb-7"></p>
+      <form id="login-form" class="space-y-4">
+       <div>
+        <label data-template-id="name-label" for="student-name" class="canva-text block font-bold mb-2"></label><input id="student-name" autocomplete="name" maxlength="80" required>
+       </div>
+       <div>
+        <label data-template-id="class-label" for="student-class" class="canva-text block font-bold mb-2"></label><input id="student-class" maxlength="30" required>
+       </div><button id="login-submit" data-template-id="login-button" class="canva-button primary w-full" type="submit" disabled></button>
+      </form>
+      <p id="login-message" role="status" class="mt-4"></p>
+      <p data-template-id="privacy-note" class="canva-text mt-5"></p>
+     </div>
+     <div class="relative rounded-[28px] overflow-hidden min-h-[360px] bg-[#275e4f]"><img data-template-id="hero-image" class="canva-image photo absolute inset-0" loading="lazy">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#102b26] via-transparent to-transparent"></div>
+      <p data-template-id="hero-caption" class="canva-text absolute bottom-7 left-7 right-7 font-bold text-white"></p>
+     </div>
+    </section>
+    <div id="lesson" hidden>
+     <section class="screen surface rounded-[28px] overflow-hidden" data-step="0">
+      <div class="grid md:grid-cols-2">
+       <div class="p-7 md:p-12 flex flex-col justify-center">
+        <span data-template-id="welcome-kicker" class="canva-tag tag mb-4"></span>
+        <h1 id="welcome-title" class="mb-4"></h1>
+        <p data-template-id="welcome-copy" class="canva-text"></p>
+       </div>
+       <div class="h-64 md:h-[400px]">
+        <img data-template-id="welcome-image" class="canva-image photo" loading="lazy">
+       </div>
+      </div>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12" data-step="1"><span data-template-id="goals-kicker" class="canva-tag tag"></span>
+      <h2 data-template-id="goals-title" class="canva-text mt-3 mb-5"></h2>
+      <div class="grid md:grid-cols-3 gap-4">
+       <article data-template-id="goal-card-1" class="canva-card rounded-2xl p-5">
+        <span aria-hidden="true">🔎</span>
+        <h3 data-template-id="goal-1-title" class="canva-text mt-3"></h3>
+        <p data-template-id="goal-1-copy" class="canva-text mt-2"></p>
+       </article>
+       <article data-template-id="goal-card-2" class="canva-card rounded-2xl p-5">
+        <span aria-hidden="true">🌿</span>
+        <h3 data-template-id="goal-2-title" class="canva-text mt-3"></h3>
+        <p data-template-id="goal-2-copy" class="canva-text mt-2"></p>
+       </article>
+       <article data-template-id="goal-card-3" class="canva-card rounded-2xl p-5">
+        <span aria-hidden="true">💬</span>
+        <h3 data-template-id="goal-3-title" class="canva-text mt-3"></h3>
+        <p data-template-id="goal-3-copy" class="canva-text mt-2"></p>
+       </article>
+      </div>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12" data-step="2"><span data-template-id="prior-kicker" class="canva-tag tag"></span>
+      <h2 data-template-id="prior-title" class="canva-text mt-3 mb-3"></h2>
+      <p data-template-id="prior-copy" class="canva-text mb-6"></p>
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+       <img data-template-id="tiger-image" class="canva-image w-full h-64 object-cover rounded-2xl" loading="lazy">
+       <div>
+        <p data-template-id="prior-question" class="canva-text font-bold mb-4"></p><button id="prior-reveal" data-template-id="prior-button" type="button" class="canva-button secondary"></button>
+        <p id="prior-answer" data-template-id="prior-feedback" class="canva-text bg-[#e8f1e8] rounded-xl p-5 mt-4" hidden></p>
+       </div>
+      </div>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12" data-step="3"><span data-template-id="intro-kicker" class="canva-tag tag"></span>
+      <h2 data-template-id="intro-title" class="canva-text mt-3 mb-4"></h2>
+      <div class="grid md:grid-cols-2 gap-6">
+       <div class="space-y-4">
+        <p data-template-id="intro-context" class="canva-text"></p>
+        <p data-template-id="intro-prompt" class="canva-text bg-[#e8f1e8] p-5 rounded-xl"></p>
+        <p data-template-id="intro-purpose" class="canva-text"></p>
+       </div><img data-template-id="intro-image" class="canva-image w-full h-60 object-cover rounded-2xl" loading="lazy">
+      </div>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12" data-step="4"><span data-template-id="concept-kicker" class="canva-tag tag"></span>
+      <h2 data-template-id="concept-title" class="canva-text mt-3 mb-3"></h2>
+      <p data-template-id="concept-intro" class="canva-text mb-6"></p>
+      <div class="grid md:grid-cols-2 gap-4">
+       <article class="bg-[#e8f1e8] rounded-2xl p-5">
+        <h3 data-template-id="classification-title" class="canva-text"></h3>
+        <p data-template-id="classification-copy" class="canva-text mt-2"></p>
+       </article>
+       <article class="bg-[#fff0e5] rounded-2xl p-5">
+        <h3 data-template-id="description-title" class="canva-text"></h3>
+        <p data-template-id="description-copy" class="canva-text mt-2"></p>
+       </article>
+      </div>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12" data-step="5"><span data-template-id="example-kicker" class="canva-tag tag"></span>
+      <h2 data-template-id="example-title" class="canva-text mt-3 mb-5"></h2>
+      <div class="grid md:grid-cols-2 gap-6">
+       <img data-template-id="penguin-image" class="canva-image w-full h-72 object-cover rounded-2xl" loading="lazy">
+       <div class="space-y-4">
+        <p data-template-id="penguin-first" class="canva-text bg-[#e8f1e8] rounded-xl p-5"></p>
+        <p data-template-id="penguin-second" class="canva-text bg-[#fff0e5] rounded-xl p-5"></p>
+       </div>
+      </div>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12" data-step="6"><span data-template-id="explore-kicker" class="canva-tag tag"></span>
+      <h2 data-template-id="explore-title" class="canva-text mt-3 mb-3"></h2>
+      <p data-template-id="explore-copy" class="canva-text mb-5"></p>
+      <div class="grid md:grid-cols-2 gap-6">
+       <img data-template-id="eagle-image" class="canva-image w-full h-64 object-cover rounded-2xl" loading="lazy">
+       <div class="space-y-3">
+        <p data-template-id="eagle-fact" class="canva-text bg-[#e8f1e8] p-4 rounded-xl"></p>
+        <p data-template-id="eagle-reference" class="canva-text bg-[#fff0e5] p-4 rounded-xl"></p><button id="reference-reveal" data-template-id="reference-button" type="button" class="canva-button secondary"></button>
+        <p id="reference-answer" data-template-id="reference-feedback" class="canva-text bg-[#e8f1e8] p-4 rounded-xl" hidden></p>
+       </div>
+      </div>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12" data-step="7"><span data-template-id="practice-kicker" class="canva-tag tag"></span>
+      <h2 data-template-id="practice-title" class="canva-text mt-3 mb-3"></h2>
+      <p data-template-id="practice-copy" class="canva-text mb-5"></p>
+      <div id="guided-questions" class="space-y-4">
+       <article class="question guided-card" data-index="0" data-correct="1">
+        <h3 data-template-id="guided-q1" class="canva-text mb-3"></h3>
+        <div class="space-y-2">
+         <button type="button" data-template-id="guided-1a" class="canva-button option"></button><button type="button" data-template-id="guided-1b" class="canva-button option"></button><button type="button" data-template-id="guided-1c" class="canva-button option"></button>
+        </div>
+        <p data-template-id="guided-why-1" class="canva-text mt-3" hidden></p>
+       </article>
+       <article class="question guided-card" data-index="1" data-correct="0">
+        <h3 data-template-id="guided-q2" class="canva-text mb-3"></h3>
+        <div class="space-y-2">
+         <button type="button" data-template-id="guided-2a" class="canva-button option"></button><button type="button" data-template-id="guided-2b" class="canva-button option"></button><button type="button" data-template-id="guided-2c" class="canva-button option"></button>
+        </div>
+        <p data-template-id="guided-why-2" class="canva-text mt-3" hidden></p>
+       </article>
+       <article class="question guided-card" data-index="2" data-correct="1">
+        <h3 data-template-id="guided-q3" class="canva-text mb-3"></h3>
+        <div class="space-y-2">
+         <button type="button" data-template-id="guided-3a" class="canva-button option"></button><button type="button" data-template-id="guided-3b" class="canva-button option"></button><button type="button" data-template-id="guided-3c" class="canva-button option"></button>
+        </div>
+        <p data-template-id="guided-why-3" class="canva-text mt-3" hidden></p>
+       </article>
+       <article class="question guided-card" data-index="3" data-correct="2">
+        <h3 data-template-id="guided-q4" class="canva-text mb-3"></h3>
+        <div class="space-y-2">
+         <button type="button" data-template-id="guided-4a" class="canva-button option"></button><button type="button" data-template-id="guided-4b" class="canva-button option"></button><button type="button" data-template-id="guided-4c" class="canva-button option"></button>
+        </div>
+        <p data-template-id="guided-why-4" class="canva-text mt-3" hidden></p>
+       </article>
+       <article class="question guided-card" data-index="4" data-correct="0">
+        <h3 data-template-id="guided-q5" class="canva-text mb-3"></h3>
+        <div class="space-y-2">
+         <button type="button" data-template-id="guided-5a" class="canva-button option"></button><button type="button" data-template-id="guided-5b" class="canva-button option"></button><button type="button" data-template-id="guided-5c" class="canva-button option"></button>
+        </div>
+        <p data-template-id="guided-why-5" class="canva-text mt-3" hidden></p>
+       </article>
+       <article class="question guided-card" data-index="5" data-correct="2">
+        <h3 data-template-id="guided-q6" class="canva-text mb-3"></h3>
+        <div class="space-y-2">
+         <button type="button" data-template-id="guided-6a" class="canva-button option"></button><button type="button" data-template-id="guided-6b" class="canva-button option"></button><button type="button" data-template-id="guided-6c" class="canva-button option"></button>
+        </div>
+        <p data-template-id="guided-why-6" class="canva-text mt-3" hidden></p>
+       </article>
+       <article class="question guided-card" data-index="6" data-correct="1">
+        <h3 data-template-id="guided-q7" class="canva-text mb-3"></h3>
+        <div class="space-y-2">
+         <button type="button" data-template-id="guided-7a" class="canva-button option"></button><button type="button" data-template-id="guided-7b" class="canva-button option"></button><button type="button" data-template-id="guided-7c" class="canva-button option"></button>
+        </div>
+        <p data-template-id="guided-why-7" class="canva-text mt-3" hidden></p>
+       </article>
+       <article class="question guided-card" data-index="7" data-correct="0">
+        <h3 data-template-id="guided-q8" class="canva-text mb-3"></h3>
+        <div class="space-y-2">
+         <button type="button" data-template-id="guided-8a" class="canva-button option"></button><button type="button" data-template-id="guided-8b" class="canva-button option"></button><button type="button" data-template-id="guided-8c" class="canva-button option"></button>
+        </div>
+        <p data-template-id="guided-why-8" class="canva-text mt-3" hidden></p>
+       </article>
+      </div>
+      <p id="guided-summary" role="status" class="mt-4 font-bold"></p>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12" data-step="8"><span data-template-id="application-kicker" class="canva-tag tag"></span>
+      <h2 data-template-id="application-title" class="canva-text mt-3 mb-3"></h2>
+      <p data-template-id="application-copy" class="canva-text mb-5"></p>
+      <div class="grid md:grid-cols-2 gap-6">
+       <img data-template-id="komodo-image" class="canva-image w-full h-72 object-cover rounded-2xl" loading="lazy">
+       <div>
+        <p data-template-id="komodo-facts" class="canva-text bg-[#e8f1e8] p-5 rounded-xl mb-4"></p>
+        <form id="application-form">
+         <label data-template-id="application-label" for="application-answer" class="canva-text block font-bold mb-2"></label><textarea id="application-answer" rows="5" maxlength="600" required></textarea><button id="application-submit" data-template-id="application-button" class="canva-button primary mt-3" type="submit"></button>
+        </form>
+        <p id="application-feedback" role="status" class="mt-3"></p>
+       </div>
+      </div>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12" data-step="9"><span data-template-id="assessment-kicker" class="canva-tag tag"></span>
+      <h2 data-template-id="assessment-title" class="canva-text mt-3 mb-3"></h2>
+      <p data-template-id="assessment-copy" class="canva-text mb-5"></p>
+      <div class="grid md:grid-cols-[1fr_2fr] gap-5 bg-[#e8f1e8] rounded-2xl p-5 mb-7">
+       <img data-template-id="bat-image" class="canva-image w-full h-56 object-cover rounded-xl" loading="lazy">
+       <div>
+        <h3 data-template-id="bat-reading-title" class="canva-text mb-3"></h3>
+        <p data-template-id="bat-reading" class="canva-text reading"></p>
+       </div>
+      </div>
+      <form id="evaluation-form">
+       <h3 data-template-id="mc-heading" class="canva-text mb-4"></h3>
+       <div class="grid md:grid-cols-2 gap-4 mb-8">
+        <fieldset class="question" data-question="1" data-type="choice" data-answer="A">
+         <legend data-template-id="q1" class="canva-text font-bold mb-3"></legend>
+         <div class="space-y-2">
+          <button type="button" data-value="A" data-template-id="q1a" class="canva-button option"></button><button type="button" data-value="B" data-template-id="q1b" class="canva-button option"></button><button type="button" data-value="C" data-template-id="q1c" class="canva-button option"></button><button type="button" data-value="D" data-template-id="q1d" class="canva-button option"></button>
+         </div>
+        </fieldset>
+        <fieldset class="question" data-question="2" data-type="choice" data-answer="C">
+         <legend data-template-id="q2" class="canva-text font-bold mb-3"></legend>
+         <div class="space-y-2">
+          <button type="button" data-value="A" data-template-id="q2a" class="canva-button option"></button><button type="button" data-value="B" data-template-id="q2b" class="canva-button option"></button><button type="button" data-value="C" data-template-id="q2c" class="canva-button option"></button><button type="button" data-value="D" data-template-id="q2d" class="canva-button option"></button>
+         </div>
+        </fieldset>
+        <fieldset class="question" data-question="3" data-type="choice" data-answer="B">
+         <legend data-template-id="q3" class="canva-text font-bold mb-3"></legend>
+         <div class="space-y-2">
+          <button type="button" data-value="A" data-template-id="q3a" class="canva-button option"></button><button type="button" data-value="B" data-template-id="q3b" class="canva-button option"></button><button type="button" data-value="C" data-template-id="q3c" class="canva-button option"></button><button type="button" data-value="D" data-template-id="q3d" class="canva-button option"></button>
+         </div>
+        </fieldset>
+        <fieldset class="question" data-question="4" data-type="choice" data-answer="A">
+         <legend data-template-id="q4" class="canva-text font-bold mb-3"></legend>
+         <div class="space-y-2">
+          <button type="button" data-value="A" data-template-id="q4a" class="canva-button option"></button><button type="button" data-value="B" data-template-id="q4b" class="canva-button option"></button><button type="button" data-value="C" data-template-id="q4c" class="canva-button option"></button><button type="button" data-value="D" data-template-id="q4d" class="canva-button option"></button>
+         </div>
+        </fieldset>
+        <fieldset class="question" data-question="5" data-type="choice" data-answer="D">
+         <legend data-template-id="q5" class="canva-text font-bold mb-3"></legend>
+         <div class="space-y-2">
+          <button type="button" data-value="A" data-template-id="q5a" class="canva-button option"></button><button type="button" data-value="B" data-template-id="q5b" class="canva-button option"></button><button type="button" data-value="C" data-template-id="q5c" class="canva-button option"></button><button type="button" data-value="D" data-template-id="q5d" class="canva-button option"></button>
+         </div>
+        </fieldset>
+       </div>
+       <h3 data-template-id="fill-heading" class="canva-text mb-4"></h3>
+       <div class="grid md:grid-cols-2 gap-4 mb-8">
+        <div class="question" data-question="6" data-type="fill" data-answer="fly">
+         <label for="answer-6" data-template-id="q6" class="canva-text block font-bold mb-3"></label><input id="answer-6" autocomplete="off">
+        </div>
+        <div class="question" data-question="7" data-type="fill" data-answer="fruit bats">
+         <label for="answer-7" data-template-id="q7" class="canva-text block font-bold mb-3"></label><input id="answer-7" autocomplete="off">
+        </div>
+        <div class="question" data-question="8" data-type="fill" data-answer="big ears">
+         <label for="answer-8" data-template-id="q8" class="canva-text block font-bold mb-3"></label><input id="answer-8" autocomplete="off">
+        </div>
+        <div class="question" data-question="9" data-type="fill" data-answer="important">
+         <label for="answer-9" data-template-id="q9" class="canva-text block font-bold mb-3"></label><input id="answer-9" autocomplete="off">
+        </div>
+        <div class="question" data-question="10" data-type="fill" data-answer="flying foxes">
+         <label for="answer-10" data-template-id="q10" class="canva-text block font-bold mb-3"></label><input id="answer-10" autocomplete="off">
+        </div>
+       </div>
+       <h3 data-template-id="match-heading" class="canva-text mb-2"></h3>
+       <p data-template-id="match-help" class="canva-text mb-4"></p>
+       <div class="grid md:grid-cols-2 gap-4 mb-8">
+        <div class="question" data-question="11" data-type="select" data-answer="species">
+         <label for="answer-11" data-template-id="q11" class="canva-text block font-bold mb-3"></label><select id="answer-11" class="category-select"></select>
+        </div>
+        <div class="question" data-question="12" data-type="select" data-answer="habits">
+         <label for="answer-12" data-template-id="q12" class="canva-text block font-bold mb-3"></label><select id="answer-12" class="category-select"></select>
+        </div>
+        <div class="question" data-question="13" data-type="select" data-answer="habitat">
+         <label for="answer-13" data-template-id="q13" class="canva-text block font-bold mb-3"></label><select id="answer-13" class="category-select"></select>
+        </div>
+        <div class="question" data-question="14" data-type="select" data-answer="physical">
+         <label for="answer-14" data-template-id="q14" class="canva-text block font-bold mb-3"></label><select id="answer-14" class="category-select"></select>
+        </div>
+        <div class="question" data-question="15" data-type="select" data-answer="function">
+         <label for="answer-15" data-template-id="q15" class="canva-text block font-bold mb-3"></label><select id="answer-15" class="category-select"></select>
+        </div>
+       </div>
+       <h3 data-template-id="truth-heading" class="canva-text mb-2"></h3>
+       <p data-template-id="truth-help" class="canva-text mb-4"></p>
+       <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div class="question" data-question="16" data-type="select" data-answer="yes">
+         <label for="answer-16" data-template-id="q16" class="canva-text block font-bold mb-3"></label><select id="answer-16" class="truth-select"></select>
+        </div>
+        <div class="question" data-question="17" data-type="select" data-answer="no">
+         <label for="answer-17" data-template-id="q17" class="canva-text block font-bold mb-3"></label><select id="answer-17" class="truth-select"></select>
+        </div>
+        <div class="question" data-question="18" data-type="select" data-answer="no">
+         <label for="answer-18" data-template-id="q18" class="canva-text block font-bold mb-3"></label><select id="answer-18" class="truth-select"></select>
+        </div>
+        <div class="question" data-question="19" data-type="select" data-answer="yes">
+         <label for="answer-19" data-template-id="q19" class="canva-text block font-bold mb-3"></label><select id="answer-19" class="truth-select"></select>
+        </div>
+        <div class="question" data-question="20" data-type="select" data-answer="yes">
+         <label for="answer-20" data-template-id="q20" class="canva-text block font-bold mb-3"></label><select id="answer-20" class="truth-select"></select>
+        </div>
+       </div><button id="evaluation-submit" data-template-id="assessment-button" class="canva-button primary" type="submit"></button>
+       <p id="evaluation-feedback" class="mt-3" role="status"></p>
+      </form>
+      <div id="results" class="rounded-2xl bg-[#e8f1e8] p-6 mt-5" aria-live="polite" hidden>
+       <h3 data-template-id="results-title" class="canva-text mb-3"></h3>
+       <p id="results-detail"></p>
+      </div>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12" data-step="10"><span data-template-id="reflection-kicker" class="canva-tag tag"></span>
+      <h2 data-template-id="reflection-title" class="canva-text mt-3 mb-3"></h2>
+      <p data-template-id="reflection-copy" class="canva-text mb-5"></p>
+      <form id="reflection-form" class="space-y-4">
+       <fieldset>
+        <legend data-template-id="reflection-question" class="canva-text font-bold mb-3"></legend> <label class="block mb-2"><input type="radio" name="understanding" value="Saya memahami konsep utama." required> <span data-template-id="reflection-choice-1" class="canva-text"></span></label> <label class="block mb-2"><input type="radio" name="understanding" value="Saya dapat menerapkan konsep."> <span data-template-id="reflection-choice-2" class="canva-text"></span></label> <label class="block"><input type="radio" name="understanding" value="Saya masih membutuhkan latihan."> <span data-template-id="reflection-choice-3" class="canva-text"></span></label>
+       </fieldset>
+       <div>
+        <label for="reflection-note" data-template-id="reflection-note-label" class="canva-text block font-bold mb-2"></label><textarea id="reflection-note" rows="3" maxlength="500" required></textarea>
+       </div><button id="reflection-submit" data-template-id="reflection-button" type="submit" class="canva-button primary"></button>
+      </form>
+      <p id="reflection-feedback" role="status" class="mt-3"></p>
+     </section>
+     <section class="screen surface rounded-[28px] p-7 md:p-12 text-center" data-step="11">
+      <div class="text-6xl mb-4" aria-hidden="true">
+       ✦
+      </div>
+      <h2 data-template-id="completion-title" class="canva-text mb-3"></h2>
+      <p data-template-id="completion-copy" class="canva-text mb-5"></p>
+      <p id="completion-summary" class="font-bold"></p>
+     </section>
+     <nav class="flex justify-between gap-3 mt-6" aria-label="Navigasi pembelajaran">
+      <button id="back-button" data-template-id="back-label" class="canva-button secondary" type="button"></button><button id="next-button" data-template-id="next-label" class="canva-button primary" type="button"></button>
+     </nav>
+    </div>
+    <section id="dashboard" class="screen surface rounded-[28px] p-6 md:p-10" hidden>
+     <div class="flex flex-wrap justify-between gap-3 items-start mb-5">
+      <div>
+       <h1 data-template-id="dashboard-title" class="canva-text mb-2"></h1>
+       <p data-template-id="dashboard-copy" class="canva-text"></p>
+      </div><button id="dashboard-close" data-template-id="dashboard-close-label" class="canva-button secondary" type="button"></button>
+     </div>
+     <p id="dashboard-message" role="status" class="mb-4"></p>
+     <div class="overflow-x-auto">
+      <table class="w-full text-left text-sm">
+       <thead>
+        <tr class="border-b border-[#d9ded1]">
+         <th scope="col" class="p-3">Siswa</th>
+         <th scope="col" class="p-3">Kelas</th>
+         <th scope="col" class="p-3">Progres</th>
+         <th scope="col" class="p-3">Latihan</th>
+         <th scope="col" class="p-3">Evaluasi</th>
+         <th scope="col" class="p-3">Status</th>
+        </tr>
+       </thead>
+       <tbody id="dashboard-rows"></tbody>
+      </table>
+     </div>
+    </section>
+   </main>
+   <footer class="max-w-6xl mx-auto px-5 pb-7">
+    <p data-template-id="footer-note" class="canva-footer"></p>
+   </footer>
+  </div>
+  <script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const steps = ['Welcome','Learning Goals','Apersepsi','Introduction','Concept','Example','Interactive Content','Guided Practice','Application','Assessment','Reflection','Completion'];
+  const GUIDED_TOTAL = 8;
+  let records = [], student = null, step = 0, ready = false, busy = false, selected = {}, dashboardFromLesson = false;
+  const normalize = value => String(value || '').trim().toLowerCase().replace(/\s+/g, ' ');
+  const solvedCount = () => Math.max(0, Math.min(GUIDED_TOTAL, Number(student?.guided_practice_score) || 0));
+  const initial = (name, cl) => ({
+    student_name:name, student_class:cl, login_time:new Date().toISOString(),
+    current_section:'0', progress_percentage:0, material_progress:0,
+    activity_progress:0, evaluation_progress:0, guided_practice_score:0,
+    guided_practice_attempts:0, evaluation_score:0, evaluation_percentage:0,
+    evaluation_correct:0, evaluation_wrong:0, evaluation_submitted_at:'',
+    reflection_understanding:'', reflection_note:'', completed_at:'',
+    status:'Belajar', last_activity:''
+  });
+  function progress() {
+    if (!student) return;
+    for (const [key, field] of [['material','material_progress'],['activity','activity_progress'],['evaluation','evaluation_progress']]) {
+      const value = Number(student[field]) || 0;
+      $(key + '-number').textContent = value + '%';
+      $(key + '-fill').style.width = value + '%';
+    }
+  }
+  function dashboard() {
+    const body = $('dashboard-rows');
+    const seen = new Map([...body.children].map(row => [row.dataset.id, row]));
+    $('dashboard-message').textContent = records.length ? `${records.length} profil siswa. Dashboard ini terbuka untuk pengunjung.` : 'Belum ada profil siswa.';
+    [...records].sort((a,b) => String(a.student_name).localeCompare(String(b.student_name), 'id')).forEach(record => {
+      let row = seen.get(record.__backendId);
+      if (!row) {
+        row = document.createElement('tr'); row.dataset.id = record.__backendId;
+        row.className = 'border-b border-[#e4e8e0]';
+        for (let i = 0; i < 6; i++) {
+          const cell = document.createElement('td'); cell.className = 'p-3 whitespace-nowrap'; row.append(cell);
+        }
+        body.append(row);
+      }
+      [record.student_name,record.student_class,(record.progress_percentage || 0) + '%',
+       (record.guided_practice_score || 0) + '/8',
+       record.evaluation_submitted_at ? (record.evaluation_percentage || 0) + '%' : '—',
+       record.status || 'Belajar'].forEach((value,i) => {
+        if (row.children[i].textContent !== String(value)) row.children[i].textContent = value;
+      });
+      seen.delete(record.__backendId);
+    });
+    seen.forEach(row => row.remove());
+  }
+  const handler = {onDataChanged(data) {
+    records = data;
+    if (student && !busy) {
+      const latest = data.find(record => record.__backendId === student.__backendId);
+      if (latest) student = latest;
+    }
+    progress(); dashboard();
+    if (student && step === 7 && !$('lesson').hidden) syncGuided();
+  }};
+  async function write(changes) {
+    if (!student || busy) return false;
+    busy = true; $('save-status').textContent = 'Menyimpan…';
+    try {
+      const updated = {...student,...changes};
+      const result = await window.dataSdk.update(updated);
+      if (!result.isOk) { $('save-status').textContent = 'Gagal menyimpan. Coba lagi.'; return false; }
+      student = updated;
+      records = records.map(record => record.__backendId === updated.__backendId ? updated : record);
+      progress(); dashboard(); $('save-status').textContent = 'Tersimpan di Canva Sheet';
+      return true;
+    } catch (error) {
+      $('save-status').textContent = 'Gagal menyimpan. Periksa koneksi.';
+      return false;
+    } finally { busy = false; }
+  }
+  function syncGuided() {
+    const done = solvedCount();
+    document.querySelectorAll('.guided-card').forEach((card, index) => {
+      const solved = index < done, active = index === done;
+      card.classList.toggle('is-locked', !solved && !active);
+      card.querySelectorAll('button').forEach((button, choice) => {
+        button.disabled = !active || busy;
+        button.classList.toggle('selected', solved && choice === Number(card.dataset.correct));
+        if (solved) button.classList.remove('incorrect');
+      });
+      card.querySelector('p').hidden = !solved;
+    });
+    $('guided-summary').textContent = `${done} dari ${GUIDED_TOTAL} latihan dipahami.`;
+    if (step === 7) $('next-button').disabled = done < GUIDED_TOTAL || busy;
+  }
+  function showResults() {
+    $('results').hidden = false;
+    $('results-detail').textContent = `Skor ${student.evaluation_score}/20 · Benar ${student.evaluation_correct} · Salah ${student.evaluation_wrong} · ${student.evaluation_percentage}%.`;
+    $('evaluation-form').querySelectorAll('input,select,button').forEach(el => el.disabled = true);
+  }
+  function show(n) {
+    step = n; $('login').hidden = true; $('dashboard').hidden = true;
+    $('lesson').hidden = false; $('learning-shell').hidden = false;
+    document.querySelectorAll('[data-step]').forEach(el => el.hidden = Number(el.dataset.step) !== n);
+    $('position').textContent = `${String(n + 1).padStart(2,'0')} / 12 · ${steps[n]}`;
+    $('back-button').disabled = n === 0;
+    $('next-button').hidden = n === 11;
+    $('next-button').disabled = (n === 7 && solvedCount() < GUIDED_TOTAL) ||
+      (n === 8 && !String(student.last_activity || '').startsWith('Komodo:')) ||
+      (n === 9 && !student.evaluation_submitted_at) ||
+      (n === 10 && !student.reflection_note);
+    $('student-chip').textContent = student.student_name;
+    if (n === 0) $('welcome-title').textContent = 'Welcome, ' + student.student_name + '!';
+    if (n === 7) syncGuided();
+    if (n === 9 && student.evaluation_submitted_at) showResults();
+    if (n === 11) $('completion-summary').textContent =
+      `${student.student_name} · Nilai ${student.evaluation_percentage}% · Selesai ${new Date(student.completed_at || Date.now()).toLocaleString('id-ID')}`;
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  async function move(n) {
+    if (!student || busy || n < 0 || n > 11) return;
+    if (n > step) {
+      if (step === 7 && solvedCount() < GUIDED_TOTAL) {
+        $('guided-summary').textContent = `Selesaikan seluruh ${GUIDED_TOTAL} latihan dahulu.`; return;
+      }
+      if (step === 8 && !String(student.last_activity || '').startsWith('Komodo:')) return;
+      if (step === 9 && !student.evaluation_submitted_at) return;
+      if (step === 10 && !student.reflection_note) return;
+    }
+    const changes = {
+      current_section:String(n), progress_percentage:Math.round(n / 11 * 100),
+      material_progress:Math.min(100,Math.round(Math.min(n,6) / 6 * 100)),
+      activity_progress:n >= 9 ? 100 : student.activity_progress,
+      status:n === 11 ? 'Selesai' : 'Belajar'
+    };
+    if (await write(changes)) show(n);
+  }
+
+  document.querySelectorAll('.guided-card').forEach(card => {
+    [...card.querySelectorAll('button')].forEach((button, choice) => button.addEventListener('click', async () => {
+      if (!student || busy || Number(card.dataset.index) !== solvedCount()) return;
+      const correct = choice === Number(card.dataset.correct);
+      const current = solvedCount();
+      card.querySelectorAll('button').forEach(item => item.disabled = true);
+      const ok = await write({
+        guided_practice_attempts:(Number(student.guided_practice_attempts) || 0) + 1,
+        guided_practice_score:current + (correct ? 1 : 0),
+        activity_progress:Math.round((current + (correct ? 1 : 0)) / GUIDED_TOTAL * 60)
+      });
+      if (!ok) {
+        syncGuided(); $('guided-summary').textContent = 'Jawaban belum tersimpan. Coba lagi.'; return;
+      }
+      if (correct) {
+        syncGuided();
+        const next = document.querySelector(`.guided-card[data-index="${current + 1}"]`);
+        if (next) next.scrollIntoView({behavior:'smooth',block:'center'});
+      } else {
+        button.classList.add('incorrect');
+        card.querySelector('p').hidden = false;
+        syncGuided();
+        card.querySelector('p').hidden = false;
+        $('guided-summary').textContent = 'Belum tepat. Baca petunjuk, lalu coba pilihan lain.';
+      }
+    }));
+  });
+
+  const categories = [['','Pilih kategori'],['physical','Physical characteristics'],['habitat','Habitat'],['function','Function'],['habits','Habits'],['species','Species']];
+  document.querySelectorAll('.category-select').forEach(select => categories.forEach(([value,label]) => select.add(new Option(label,value))));
+  document.querySelectorAll('.truth-select').forEach(select => [['','Pilih jawaban'],['yes','Yes / Ya'],['no','No / Tidak']].forEach(([value,label]) => select.add(new Option(label,value))));
+  $('evaluation-form').querySelectorAll('[data-type="choice"]').forEach(card => card.querySelectorAll('button').forEach(button => button.addEventListener('click', () => {
+    if (student?.evaluation_submitted_at) return;
+    selected[card.dataset.question] = button.dataset.value;
+    card.querySelectorAll('button').forEach(item => item.classList.toggle('selected',item === button));
+  })));
+  $('evaluation-form').addEventListener('submit', async event => {
+    event.preventDefault();
+    if (!student || busy || student.evaluation_submitted_at) return;
+    let correct = 0;
+    for (const card of $('evaluation-form').querySelectorAll('[data-question]')) {
+      const value = card.dataset.type === 'choice' ? selected[card.dataset.question] : card.querySelector('input,select').value;
+      if (!String(value || '').trim()) {
+        $('evaluation-feedback').textContent = `Jawab soal nomor ${card.dataset.question} terlebih dahulu.`;
+        card.scrollIntoView({behavior:'smooth',block:'center'});
+        card.querySelector('button,input,select')?.focus(); return;
+      }
+      if (normalize(value) === normalize(card.dataset.answer)) correct++;
+    }
+    $('evaluation-submit').disabled = true;
+    $('evaluation-feedback').textContent = 'Menyimpan hasil evaluasi…';
+    const ok = await write({
+      evaluation_score:correct,evaluation_percentage:correct * 5,
+      evaluation_correct:correct,evaluation_wrong:20 - correct,
+      evaluation_progress:100,evaluation_submitted_at:new Date().toISOString()
+    });
+    $('evaluation-feedback').textContent = ok ? 'Evaluasi tersimpan.' : 'Hasil belum tersimpan. Coba kirim lagi.';
+    if (ok) { showResults(); $('next-button').disabled = false; }
+    else $('evaluation-submit').disabled = false;
+  });
+  $('login-form').addEventListener('submit', async event => {
+    event.preventDefault();
+    if (!ready || busy) return;
+    const name = $('student-name').value.trim().replace(/\s+/g,' ');
+    const cl = $('student-class').value.trim().replace(/\s+/g,' ');
+    if (!name || !cl) return;
+    busy = true; $('login-submit').disabled = true; $('login-message').textContent = 'Membuka profil…';
+    try {
+      let found = records.find(record => normalize(record.student_name) === normalize(name) && normalize(record.student_class) === normalize(cl));
+      if (!found) {
+        if (records.length >= 999) { $('login-message').textContent = 'Batas 999 profil tercapai.'; return; }
+        const created = await window.dataSdk.create(initial(name,cl));
+        if (!created.isOk) { $('login-message').textContent = 'Profil gagal disimpan. Coba lagi.'; return; }
+        found = records.find(record => normalize(record.student_name) === normalize(name) && normalize(record.student_class) === normalize(cl));
+        if (!found) { $('login-message').textContent = 'Profil dibuat. Tekan Mulai belajar sekali lagi.'; return; }
+      }
+      student = found;
+      if (String(found.last_activity || '').startsWith('Komodo:')) $('application-answer').value = found.last_activity.slice(8);
+      if (found.reflection_note) {
+        $('reflection-note').value = found.reflection_note;
+        const choice = [...document.querySelectorAll('[name=understanding]')].find(el => el.value === found.reflection_understanding);
+        if (choice) choice.checked = true;
+      }
+      $('login-message').textContent = ''; progress();
+      show(Math.max(0,Math.min(11,Number(found.current_section) || 0)));
+    } catch (error) {
+      $('login-message').textContent = 'Tidak dapat membuka profil. Periksa koneksi.';
+    } finally { busy = false; $('login-submit').disabled = false; }
+  });
+  $('application-form').addEventListener('submit', async event => {
+    event.preventDefault(); if (busy || !student) return;
+    const text = $('application-answer').value.trim();
+    if (text.split(/\n+/).filter(line => line.trim()).length < 3) {
+      $('application-feedback').textContent = 'Tulis tiga fakta pada baris terpisah.'; return;
+    }
+    $('application-submit').disabled = true;
+    const ok = await write({last_activity:'Komodo: ' + text,activity_progress:100});
+    $('application-feedback').textContent = ok ? 'Catatan tersimpan. Kamu dapat melanjutkan.' : 'Catatan belum tersimpan. Coba lagi.';
+    if (ok) $('next-button').disabled = false;
+    $('application-submit').disabled = false;
+  });
+  $('reflection-form').addEventListener('submit', async event => {
+    event.preventDefault(); if (busy || !student) return;
+    const choice = document.querySelector('[name=understanding]:checked');
+    const note = $('reflection-note').value.trim();
+    if (!choice || !note) return;
+    $('reflection-submit').disabled = true;
+    const ok = await write({reflection_understanding:choice.value,reflection_note:note,completed_at:new Date().toISOString(),status:'Selesai'});
+    $('reflection-feedback').textContent = ok ? 'Refleksimu tersimpan. Lanjutkan ke halaman akhir.' : 'Refleksi belum tersimpan. Coba lagi.';
+    if (ok) $('next-button').disabled = false;
+    $('reflection-submit').disabled = false;
+  });
+  $('prior-reveal').addEventListener('click', () => $('prior-answer').hidden = false);
+  $('reference-reveal').addEventListener('click', () => $('reference-answer').hidden = false);
+  $('back-button').addEventListener('click', () => move(step - 1));
+  $('next-button').addEventListener('click', () => move(step + 1));
+  $('dashboard-open').addEventListener('click', () => {
+    dashboardFromLesson = !!student && !$('lesson').hidden;
+    $('login').hidden = true; $('lesson').hidden = true;
+    $('learning-shell').hidden = true; $('dashboard').hidden = false; dashboard();
+  });
+  $('dashboard-close').addEventListener('click', () => {
+    if (dashboardFromLesson && student) show(step);
+    else { $('dashboard').hidden = true; $('login').hidden = false; }
+  });
+  (async () => {
+    try { const result = await window.dataSdk.init(handler); ready = result.isOk; }
+    catch (error) { ready = false; }
+    $('login-submit').disabled = !ready;
+    if (!ready) $('login-message').textContent = 'Canva Sheet belum tersedia. Coba buka kembali aplikasi.';
+  })();
+})();
+</script>
+ </body>
+</html>
